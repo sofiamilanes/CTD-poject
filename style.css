@@ -1,10 +1,8 @@
-/* ------------------------------
-    GLOBAL STYLES
---------------------------------*/
+
 :root {
     --bg: #f5f7fa;
     --card-bg: #ffffff;
-    --primary: #3b82f6;      /* blue */
+    --primary: #3b82f6; 
     --primary-dark: #1e40af;
     --text: #1f2937;
     --text-light: #6b7280;
@@ -21,9 +19,6 @@ body {
     color: var(--text);
 }
 
-/* ------------------------------
-    HEADER
---------------------------------*/
 h1 {
     text-align: center;
     color: var(--primary-dark);
@@ -31,9 +26,6 @@ h1 {
     font-size: 2.2rem;
 }
 
-/* ------------------------------
-    NAVIGATION
---------------------------------*/
 nav {
     display: flex;
     justify-content: center;
@@ -57,9 +49,6 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* ------------------------------
-    CARD / CONTENT WRAPPER
---------------------------------*/
 #current-weather,
 #forecast {
     max-width: 600px;
@@ -71,9 +60,6 @@ nav a:hover {
     font-size: 1.1rem;
 }
 
-/* ------------------------------
-    CURRENT WEATHER STYLES
---------------------------------*/
 #current-weather p {
     margin: 10px 0;
     font-size: 1.15rem;
@@ -83,9 +69,6 @@ nav a:hover {
     color: var(--primary-dark);
 }
 
-/* ------------------------------
-    FORECAST LIST
---------------------------------*/
 #forecast ul {
     list-style: none;
     padding-left: 0;
@@ -103,20 +86,3 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* ------------------------------
-    MOBILE RESPONSIVE
---------------------------------*/
-@media (max-width: 500px) {
-    h1 {
-        font-size: 1.7rem;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav a {
-        text-align: center;
-    }
-}
